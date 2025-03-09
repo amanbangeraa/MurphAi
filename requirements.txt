@@ -1,0 +1,13 @@
+numpy
+sounddevice
+scipy
+pvporcupine
+pvrecorder
+python-dotenv
+db-sqlite3
+os
+logging
+threaded
+contextlib2
+typing
+groq
