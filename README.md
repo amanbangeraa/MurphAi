@@ -33,6 +33,7 @@ Create a **.env** file in the project root and add:
 ```env
 GROQ_API_KEY=your_groq_api_key
 ACCESS_KEY=your_porcupine_access_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
 ```
 
 ### 4️⃣ Run the Assistant
