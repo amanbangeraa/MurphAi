@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1 {
+  padding-top: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body {
+  background: radial-gradient(circle at center, #0f001d, #5b038f, #0b060c, #c70059);
+  background-size: 500% 700%;
+  animation: gradient 20s ease-in-out infinite;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 500%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#siri-container {
+  width: 100%;
+  max-width: 1600px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+/* Transcription container styles */
+.transcription-container {
+  width: 80%;
+  max-width: 800px;
+  min-height: 80px;
+  margin: 0 auto 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.transcription-container.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#user-transcription {
+  margin-bottom: 10px;
+  color: #c7d8ff;
+}
+
+#ai-transcription {
+  color: #ffb7e7;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: auto;
+}
+
+.my-5 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.btn-primary {
+  background-color: #5b038f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Cal Sans", sans-serif;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 100;
+}
+
+.btn-primary:hover {
+  background-color: #c70059;
+}
+
+.btn-primary:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label {
+  background-color: #5b038f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Cal Sans", sans-serif;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 100;
+}
+
+.file-input-label:hover {
+  background-color: #c70059;
+}
