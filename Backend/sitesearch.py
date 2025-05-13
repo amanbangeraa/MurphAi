@@ -8,13 +8,13 @@ def site_open(app_name):
     # Dictionary of popular apps/websites
     apps = {
         "whatsapp": ("https://web.whatsapp.com", firefox_path),
-        "youtube": ("https://www.youtube.com", brave_path),
-        "google": ("https://www.google.com", brave_path),
-        "github": ("https://github.com", brave_path),
-        "reddit": ("https://www.reddit.com", brave_path),
-        "linkedin": ("https://www.linkedin.com", brave_path),
-        "twitter": ("https://twitter.com", brave_path),
-        "instagram": ("https://www.instagram.com", brave_path)
+        "youtube": ("https://www.youtube.com", firefox_path),
+        "google": ("https://www.google.com", firefox_path),
+        "github": ("https://github.com", firefox_path),
+        "reddit": ("https://www.reddit.com", firefox_path),
+        "linkedin": ("https://www.linkedin.com", firefox_path),
+        "twitter": ("https://twitter.com", firefox_path),
+        "instagram": ("https://www.instagram.com", firefox_path)
     }
 
     # Get the URL and browser path
